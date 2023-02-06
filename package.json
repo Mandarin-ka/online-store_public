@@ -4,6 +4,8 @@
     "description": "",
     "main": "index.js",
     "scripts": {
+        "predeploy": "npm run build",
+        "deploy": "gh-pages -d build",
         "start": "webpack serve --open --config ./webpack.config.js --env mode=dev",
         "serve": "webpack serve",
         "build": "webpack",
@@ -11,14 +13,14 @@
     },
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/AnastasiaSyt/Online-Store.git"
+        "url": "git+https://github.com/mandarin-ka/Online-Store.git"
     },
     "author": "",
     "license": "ISC",
     "bugs": {
-        "url": "https://github.com/AnastasiaSyt/Online-Store/issues"
+        "url": "https://github.com/mandarin-ka/Online-Store/issues"
     },
-    "homepage": "https://github.com/AnastasiaSyt/Online-Store#readme",
+    "homepage": "https://github.com/mandarin-ka/online-store_public/src",
     "devDependencies": {
         "@typescript-eslint/eslint-plugin": "^5.46.1",
         "@typescript-eslint/parser": "^5.46.1",
@@ -28,6 +30,7 @@
         "ts-loader": "^9.4.2",
         "typescript": "^4.9.4",
         "webpack": "^5.75.0",
+        "gh-pages": "^5.0.0",
         "webpack-cli": "^5.0.1",
         "webpack-dev-server": "^4.11.1"
     },
@@ -36,8 +39,10 @@
         "copy-webpack-plugin": "^11.0.0",
         "css-loader": "^6.7.3",
         "express": "^4.18.2",
+        "gh-pages": "^5.0.0",
         "html-webpack-plugin": "^5.5.0",
         "style-loader": "^3.3.1",
         "webpack-merge": "^5.8.0"
     }
 }
+
